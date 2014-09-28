@@ -1,7 +1,5 @@
 package com.ccl.util.tree;
 
-import i.p.m;
-
 import java.util.ArrayList;
 import android.os.Bundle;
 import android.app.Activity;
@@ -22,7 +20,6 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		lv_tree = (ListView) findViewById(R.id.lv_tree);
 		mRootList = new ArrayList<TreeElement>();
-		m.it(getApplicationContext(), "340-2-3025");
 		treeViewAdapter = new TreeViewAdapter(this, R.layout.atom_tree,
 				mRootList);
 		lv_tree.setAdapter(treeViewAdapter);
